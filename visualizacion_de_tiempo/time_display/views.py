@@ -9,7 +9,7 @@ def root(request):
 
 def index(request):
     context = {
-        "date": strftime("%d-%m, %Y", gmtime()),
+        "date": strftime("%d-%B, %Y", gmtime()),
         "time": strftime("%H:%M %p", gmtime())
     }
     return render(request,'index.html', context)
